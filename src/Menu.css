@@ -1,0 +1,88 @@
+/* The button */
+.menu-btn {
+
+  background: rgba(210, 200, 185, 0.15); /* #d2c8b9 with transparency */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid #d2c8b966;
+  color: #d2c8b9;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  padding: 0.6rem 1.5rem;
+  cursor: pointer;
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.menu-btn:hover {
+  background: #d2c8b9;
+  color: #1a1a1a;
+  border-color: #d2c8b9;
+}
+
+/* The menu  */
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #0e0d0bf5;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  transform: translateY(-100%);
+  transition: transform 0.6s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.menu-overlay.open {
+  transform: translateY(0);
+}
+
+.menu-overlay nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.menu-overlay nav a {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 300;
+  font-size: 3.5rem;
+  color: #f0ebe3;
+  text-decoration: none;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+.menu-overlay nav a:hover {
+  color: #d2c8b9;
+}
+
+.menu-close {
+  position: absolute;
+  bottom: 2.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background: transparent;
+  border: none;
+  color: #d2c8b966;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  line-height: 1;
+}
+
+.menu-close:hover {
+  color: #d2c8b9;
+}
