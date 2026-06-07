@@ -5,6 +5,9 @@ import Footer from "./Footer.jsx";
 import NavBar from "./NavBar.jsx";
 import StudioRates from "./StudioRates.jsx";
 import PhotoRates from "./PhotoRates.jsx";
+import darkStudio from "./assets/dark-studio.jpeg";
+import studioRental from "./assets/studio-rental.jpeg";
+import photoshoot from "./assets/photoshoot.jpeg";
 
 function App() {
   const [page, setPage] = useState("home");
@@ -17,7 +20,7 @@ function App() {
         <NavBar setPage={setPage} />
           <div className="hero">
             <img
-              src="/src/assets/dark-studio.jpeg"
+              src={darkStudio}
               alt=""
               className="hero-image"
             />
@@ -43,7 +46,7 @@ function App() {
 
               <div className="choose-box" onClick={() => setPage("rental")} style={{ cursor: "pointer" }} >
                 <img
-                  src="/src/assets/studio-rental.jpeg"
+                  src={studioRental}
                   alt=""
                   className="studio-rental-image"
                 />
@@ -56,7 +59,7 @@ function App() {
 
               <div className="choose-box" onClick={() => setPage("photoshoot")} style={{ cursor: "pointer" }}>
                 <img
-                  src="/src/assets/photoshoot.jpeg"
+                  src={photoshoot}
                   alt=""
                   className="photoshoot-image"
                 />
