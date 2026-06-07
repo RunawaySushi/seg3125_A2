@@ -1,9 +1,9 @@
 import "./FabulaStudio.css";
 
-export default function FabulaStudio() {
+export default function FabulaStudio({ setPage }) {
   return (
-    <a href=".hero" className="fabula-logo">
+    <button onClick={() => setPage("home")} className="fabula-logo">
       Fabula Studio
-    </a>
+    </button>
   );
 }

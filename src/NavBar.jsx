@@ -5,7 +5,7 @@ import "./NavBar.css";
 export default function NavBar({ setPage }) {
   return (
     <div id="nav-bar">
-      <FabulaStudio />
+      <FabulaStudio setPage={setPage} />
 
       <div style={{ flex: 1, display: "flex", justifyContent: "center" }}> 
         <Menu setPage={setPage} /> 
